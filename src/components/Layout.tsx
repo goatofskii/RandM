@@ -6,8 +6,6 @@ type LayoutProps = {
 };
 
 export default function Layout({ children }: LayoutProps) {
-  const username = 'goatofskii'.toLowerCase();
-
   return (
     <div className='layout'>
       <header className='header'>
@@ -20,10 +18,10 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </header>
 
-      <main>{children}</main>
+      <main className='main'>{children}</main>
 
       <footer className='footer'>
-        Made with love by frontovichok_{username}
+        Made with love by frontovichok_goatofskii
       </footer>
     </div>
   );
